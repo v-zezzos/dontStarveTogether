@@ -1,0 +1,8 @@
+
+<div>
+    <div><h1>Ingrédients ({{foodsList ? foodsList.length : ""}})</h1></div>
+    <div *ngFor="let food of foodsList" style="display: flex; align-items: center;">
+        <div><img src="{{food.img}}" style="width: 64px;"/></div>
+        <div><span>{{food.title}}</span></div>
+    </div>
+</div>

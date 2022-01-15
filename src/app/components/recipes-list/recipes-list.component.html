@@ -1,0 +1,8 @@
+
+<div>
+    <div><h1>Recettes ({{recipesList ? recipesList.length : ""}})</h1></div>
+    <div *ngFor="let recipe of recipesList" style="display: flex; align-items: center;">
+        <div><img src="{{recipe.img}}" style="width: 64px;"/></div>
+        <div><span>{{recipe.title}}</span></div>
+    </div>
+</div>
